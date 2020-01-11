@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/krt-app/static/css/main.d1b05096.chunk.css",
+    "main.js": "/krt-app/static/js/main.054feeaf.chunk.js",
+    "main.js.map": "/krt-app/static/js/main.054feeaf.chunk.js.map",
+    "runtime-main.js": "/krt-app/static/js/runtime-main.fa7f689c.js",
+    "runtime-main.js.map": "/krt-app/static/js/runtime-main.fa7f689c.js.map",
+    "static/js/2.02c3bbff.chunk.js": "/krt-app/static/js/2.02c3bbff.chunk.js",
+    "static/js/2.02c3bbff.chunk.js.map": "/krt-app/static/js/2.02c3bbff.chunk.js.map",
+    "index.html": "/krt-app/index.html",
+    "precache-manifest.e41e5e09f55b8a6e5dba5182ee17ba93.js": "/krt-app/precache-manifest.e41e5e09f55b8a6e5dba5182ee17ba93.js",
+    "service-worker.js": "/krt-app/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/krt-app/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.02c3bbff.chunk.js.LICENSE": "/krt-app/static/js/2.02c3bbff.chunk.js.LICENSE",
+    "static/media/logo.svg": "/krt-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa7f689c.js",
+    "static/js/2.02c3bbff.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.054feeaf.chunk.js"
+  ]
+}
