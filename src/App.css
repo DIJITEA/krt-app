@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+.fieldstyle {
+  width: 50px;
+  height: 50px;
+  background-image: url("UI/Texture/f1.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fieldstyle2 {
+  width: 50px;
+  height: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BUTUP{
+  position: absolute;
+  left: 600px;
+  top: 600px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.BUTLEFT{
+  position: absolute;
+  left: 550px;
+  top: 650px;
 }
-
-.App-link {
-  color: #61dafb;
+.BUTRIGH{
+  position: absolute;
+  left: 650px;
+  top: 650px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.BUTDOWN{
+  position: absolute;
+  left: 600px;
+  top: 650px;
+}
+.MOR{
+  position: absolute;
+  left: 600px;
+  top: 400px;
+  background-image: url("UI/Texture/m1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX2{
+  position: absolute;
+  left: 250px;
+  top: 350px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX3{
+  position: absolute;
+  left: 100px;
+  top: 350px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX4{
+  position: absolute;
+  left: 250px;
+  top: 200px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX5{
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX6{
+  position: absolute;
+  left: 350px;
+  top: 150px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.BOX7{
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  background-image: url("UI/Texture/b1.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.pos {
+  position: absolute;
+  left: 0px;
+}
+.pos2 {
+  position: absolute;
+  left: 50px;
+}
+.pos3 {
+  position: absolute;
+  left: 100px;
+}
+.pos4 {
+  position: absolute;
+  left: 150px;
+}
+.pos5 {
+  position: absolute;
+  left: 200px;
+}
+.pos6 {
+  position: absolute;
+  left: 250px;
+}
+.pos7 {
+  position: absolute;
+  left: 300px;
+}.pos8 {
+  position: absolute;
+  left: 350px;
+}.pos9 {
+  position: absolute;
+  left: 400px;
+}.pos10 {
+  position: absolute;
+  left: 450px;
+}.pos11 {
+  position: absolute;
+  left: 500px;
+}.pos12 {
+  position: absolute;
+  left: 550px;
+}.pos13 {
+  position: absolute;
+  left: 600px;
+}.pos14 {
+  position: absolute;
+  left: 650px;
+}.pos15 {
+  position: absolute;
+  left: 700px;
+}.pos16 {
+  position: absolute;
+  left: 750px;
+}.pos17 {
+  position: absolute;
+  left: 800px;
+}.pos18 {
+  position: absolute;
+  left: 850px;
+}.pos19 {
+  position: absolute;
+  left: 900px;
+}.pos20 {
+  position: absolute;
+  left: 950px;
+}.pos21 {
+  position: absolute;
+  left: 1000px;
+}.pos22 {
+  position: absolute;
+  left: 1050px;
 }
