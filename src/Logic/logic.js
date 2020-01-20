@@ -4,6 +4,10 @@ class MOR extends React.Component{
     
   
     render(){
+
+        setTimeout(() => {
+            alert('Close black holes')
+          }, 1);
         
         let m = 600;
         let n = 400;
@@ -20,28 +24,91 @@ class MOR extends React.Component{
                    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
                   ];
         let i = 188;
-    document.onkeypress = function(event) {
-     
-        if (event.key == "t" ){
-        console.log (i);
-    
-        
-  
-        console.log (arr[165]);
-        console.log (arr[166])
-        console.log (arr[167]);
-        
-        
+        function WIN(){
+            if(arr[196] + arr[195] + arr[174] + arr[173] + arr[152] + arr[151] == 27){
+             setTimeout(() => {
+                 alert('Good job!')
+               }, 1);
+             }
+         }
 
-        console.log (arr[188]);
-        console.log ('drop');
-        console.log (i);
-        console.log (arr[i]);
-        console.log (arr[i - 22]);
-        console.log (arr[i - 44]);
+        function UP() {  
+            if(arr[i - 22] == 0){
+                n = n-50;
+              const element = document.getElementsByClassName('MOR')[0];
+                 element.style.top= n + "px";  
+                 i = i - 22;
+                
+                } else {
+                if(arr[i - 22] > 1 && arr[i - 44] == 0){
+                    let boxname = 'BOX' + arr[i - 22];
+                    let bp = n - 100;
+                    n = n-50;
+                    const boxp = document.getElementsByClassName(boxname)[0];
+                        boxp.style.top= bp + "px"; 
+                    const element = document.getElementsByClassName('MOR')[0];
+                        element.style.top= n + "px";  
+                        arr[i - 44] = arr[i - 22];
+                        arr[i - 22] = 0;
+                        i= i - 22;
+                        WIN();
+                        return; 
+                      
+                    
+                     }
+                    }
         }
+        
+        function DOWN() {
+            if(arr[i + 22] == 0){
+                n = n+50;
+                const element = document.getElementsByClassName('MOR')[0];
+                   element.style.top= n + "px";  
+                   i= i + 22;
+                } else {
+                if(arr[i + 22] > 1 && arr[i + 44] == 0){
+                    let boxname = 'BOX' + arr[i + 22];
+                    let bp = n + 100;
+                    n = n+50;
+                    const boxp = document.getElementsByClassName(boxname)[0];
+                        boxp.style.top= bp + "px"; 
+                    const element = document.getElementsByClassName('MOR')[0];
+                        element.style.top= n + "px";  
+                         arr[i + 44] = arr[i + 22];
+                         arr[i + 22] = 0;
+                        i= i + 22;
+                        WIN();
+                        return;
+                    
+                     }
+                    }
+          }
 
-         if (event.key == "d" || event.key == "D" || event.key == "В" || event.key == "в"){
+        function LEFT() { 
+             if(arr[i - 1] == 0){
+            m = m-50;
+             const element = document.getElementsByClassName('MOR')[0];
+                element.style.left= m + "px";  
+                i= i - 1;
+            } else {
+            if(arr[i - 1] > 1 && arr[i - 2] == 0){
+                let boxname = 'BOX' + arr[i-1];
+                let bp = m - 100;
+                m = m-50;
+                const boxp = document.getElementsByClassName(boxname)[0];
+                    boxp.style.left= bp + "px"; 
+                const element = document.getElementsByClassName('MOR')[0];
+                    element.style.left= m + "px";  
+                    arr[i - 2] = arr[i - 1];
+                    arr[i - 1] = 0;
+                    i= i - 1;
+                    WIN();
+                    return;
+                  
+                
+                 }
+                }     }
+        function RIGHT() {
              if(arr[i + 1] == 0){
             m = m+50;
             const element = document.getElementsByClassName('MOR')[0];
@@ -62,127 +129,31 @@ class MOR extends React.Component{
                     arr[i + 2] = arr[i + 1];
                     arr[i + 1] = 0;
                     i= i + 1;
+                    WIN();
                     return;
                   
                 
                  }
-                }
-                } 
+                }  
+            }
+
+    document.onkeypress = function(event) {
+         if (event.key == "d" || event.key == "D" || event.key == "В" || event.key == "в"){
+            RIGHT();
+           } 
           if (event.key == "a" || event.key == "A" || event.key == "Ф" || event.key == "ф"){
-            if(arr[i - 1] == 0){
-            m = m-50;
-             const element = document.getElementsByClassName('MOR')[0];
-                element.style.left= m + "px";  
-                i= i - 1;
-            } else {
-            if(arr[i - 1] > 1 && arr[i - 2] == 0){
-                let boxname = 'BOX' + arr[i-1];
-                let bp = m - 100;
-                m = m-50;
-                const boxp = document.getElementsByClassName(boxname)[0];
-                    boxp.style.left= bp + "px"; 
-                const element = document.getElementsByClassName('MOR')[0];
-                    element.style.left= m + "px";  
-                    arr[i - 2] = arr[i - 1];
-                    arr[i - 1] = 0;
-                    i= i - 1;
-                    return;
-                  
-                
-                 }
-                }
-               
-               } 
+            LEFT() ;
+           } 
          if (event.key == "w" || event.key == "W" || event.key == "Ц" || event.key == "ц"){
-            if(arr[i - 22] == 0){
-            n = n-50;
-          const element = document.getElementsByClassName('MOR')[0];
-             element.style.top= n + "px";  
-             i = i - 22;
-            
-            } else {
-            if(arr[i - 22] > 1 && arr[i - 44] == 0){
-                let boxname = 'BOX' + arr[i - 22];
-                let bp = n - 100;
-                n = n-50;
-                const boxp = document.getElementsByClassName(boxname)[0];
-                    boxp.style.top= bp + "px"; 
-                const element = document.getElementsByClassName('MOR')[0];
-                    element.style.top= n + "px";  
-                    arr[i - 44] = arr[i - 22];
-                    arr[i - 22] = 0;
-                    i= i - 22;
-                    return; 
-                  
-                
-                 }
-                }
-         }      
+            UP();
+            } 
+             
          if (event.key == "s" || event.key == "S" || event.key == "Ы" || event.key == "ы"){
-            if(arr[i + 22] == 0){
-            n = n+50;
-            const element = document.getElementsByClassName('MOR')[0];
-               element.style.top= n + "px";  
-               i= i + 22;
-            } else {
-            if(arr[i + 22] > 1 && arr[i + 44] == 0){
-                let boxname = 'BOX' + arr[i + 22];
-                let bp = n + 100;
-                n = n+50;
-                const boxp = document.getElementsByClassName(boxname)[0];
-                    boxp.style.top= bp + "px"; 
-                const element = document.getElementsByClassName('MOR')[0];
-                    element.style.top= n + "px";  
-                     arr[i + 44] = arr[i + 22];
-                     arr[i + 22] = 0;
-                    i= i + 22;
-                    
-                    return;
-                
-                 }
-                }
-           }      
-         
-    
-            }
-            function UP() {
-                if(arr[i - 22] == 0){
-                    n = n-50;
-                  const element = document.getElementsByClassName('MOR')[0];
-                     element.style.top= n + "px";  
-                     i = i - 22;
-                    
-                    }
-            }
-            function LEFT() {
-                if(arr[i - 1] == 0){
-                    m = m-50;
-                     const element = document.getElementsByClassName('MOR')[0];
-                        element.style.left= m + "px";  
-                        i= i - 1;
-                    }
-            }
-
-            function RIGHT() {
-                if(arr[i + 1] == 0){
-                    m = m+50;
-                    const element = document.getElementsByClassName('MOR')[0];
-                        element.style.left= m + "px";  
-                        i= i + 1;
-                      
-                        
-                     }
-            }
-
-            function DOWN() {
-                if(arr[i + 22] == 0){
-                    n = n+50;
-                    const element = document.getElementsByClassName('MOR')[0];
-                       element.style.top= n + "px";  
-                       i= i + 22;
-                    }
-            }
-
+            DOWN();
+           }     
+           
+           
+ }
 
 return(
     <div>
@@ -194,9 +165,15 @@ return(
     <div  className="fieldstyle2 BOX7" />
      
 
-    <div  className="fieldstyle2 MOR" >
-     
-    </div>
+    <div  className="fieldstyle2 MOR" ></div>
+
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos1" ></div>
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos2" ></div>
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos3" ></div>
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos4" ></div>
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos5" ></div>
+    <div  className="fieldstyle2 BLACKHOLE BLACKHOLEpos6" ></div>
+
     <button className="fieldstyle2 BUTUP"  onClick={UP}></button>
     <button className="fieldstyle2 BUTLEFT" onClick={LEFT}></button>
     <button className="fieldstyle2 BUTRIGH" onClick={RIGHT}></button>
