@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/krt-app/static/css/main.d3f00942.chunk.css",
-    "main.js": "/krt-app/static/js/main.79531f47.chunk.js",
-    "main.js.map": "/krt-app/static/js/main.79531f47.chunk.js.map",
+    "main.css": "/krt-app/static/css/main.34dbd934.chunk.css",
+    "main.js": "/krt-app/static/js/main.000194e1.chunk.js",
+    "main.js.map": "/krt-app/static/js/main.000194e1.chunk.js.map",
     "runtime-main.js": "/krt-app/static/js/runtime-main.fa7f689c.js",
     "runtime-main.js.map": "/krt-app/static/js/runtime-main.fa7f689c.js.map",
     "static/css/2.47e06e2e.chunk.css": "/krt-app/static/css/2.47e06e2e.chunk.css",
     "static/js/2.1244df5d.chunk.js": "/krt-app/static/js/2.1244df5d.chunk.js",
     "static/js/2.1244df5d.chunk.js.map": "/krt-app/static/js/2.1244df5d.chunk.js.map",
     "index.html": "/krt-app/index.html",
-    "precache-manifest.0a1fc6fbc7987b6730b56ee63de2b5e3.js": "/krt-app/precache-manifest.0a1fc6fbc7987b6730b56ee63de2b5e3.js",
+    "precache-manifest.5ef9edaec3b3f015669f755324d2b7e1.js": "/krt-app/precache-manifest.5ef9edaec3b3f015669f755324d2b7e1.js",
     "service-worker.js": "/krt-app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/krt-app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.d3f00942.chunk.css.map": "/krt-app/static/css/main.d3f00942.chunk.css.map",
+    "static/css/main.34dbd934.chunk.css.map": "/krt-app/static/css/main.34dbd934.chunk.css.map",
     "static/js/2.1244df5d.chunk.js.LICENSE": "/krt-app/static/js/2.1244df5d.chunk.js.LICENSE",
     "static/media/App.css": "/krt-app/static/media/m1.a256ad08.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.fa7f689c.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.1244df5d.chunk.js",
-    "static/css/main.d3f00942.chunk.css",
-    "static/js/main.79531f47.chunk.js"
+    "static/css/main.34dbd934.chunk.css",
+    "static/js/main.000194e1.chunk.js"
   ]
 }
